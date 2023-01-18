@@ -6,6 +6,7 @@ from .conversations import ConversationsAPI
 from .favourites import FavouritesAPI
 from .instance import InstanceAPI
 from .lists import ListsAPI
+from .mutes import MutesAPI
 from .notifications import NotificationsAPI
 from .statuses import StatusesAPI
 from .timelines import TimelinesAPI
@@ -28,6 +29,7 @@ class MastodonAPI:
         self.favourites = FavouritesAPI(self)
         self.instance = InstanceAPI(self)
         self.lists = ListsAPI(self)
+        self.mutes = MutesAPI(self)
         self.notifications = NotificationsAPI(self)
         self.statuses = StatusesAPI(self)
         self.timelines = TimelinesAPI(self)
