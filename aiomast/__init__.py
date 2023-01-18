@@ -4,6 +4,7 @@ from .accounts import AccountsAPI
 from .conversations import ConversationsAPI
 from .instance import InstanceAPI
 from .lists import ListsAPI
+from .notifications import NotificationsAPI
 from .statuses import StatusesAPI
 from .timelines import TimelinesAPI
 from .trends import TrendsAPI
@@ -23,6 +24,7 @@ class MastodonAPI:
         self.conversations = ConversationsAPI(self)
         self.instance = InstanceAPI(self)
         self.lists = ListsAPI(self)
+        self.notifications = NotificationsAPI(self)
         self.statuses = StatusesAPI(self)
         self.timelines = TimelinesAPI(self)
         self.trends = TrendsAPI(self)
