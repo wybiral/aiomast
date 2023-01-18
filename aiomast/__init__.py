@@ -1,6 +1,7 @@
 from aiohttp import ClientSession
 
 from .accounts import AccountsAPI
+from .bookmarks import BookmarksAPI
 from .conversations import ConversationsAPI
 from .instance import InstanceAPI
 from .lists import ListsAPI
@@ -21,6 +22,7 @@ class MastodonAPI:
         self.ssl = ssl
         self.session = ClientSession()
         self.accounts = AccountsAPI(self)
+        self.bookmarks = BookmarksAPI(self)
         self.conversations = ConversationsAPI(self)
         self.instance = InstanceAPI(self)
         self.lists = ListsAPI(self)
