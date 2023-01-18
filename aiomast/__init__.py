@@ -3,6 +3,7 @@ from aiohttp import ClientSession
 from .accounts import AccountsAPI
 from .bookmarks import BookmarksAPI
 from .conversations import ConversationsAPI
+from .favourites import FavouritesAPI
 from .instance import InstanceAPI
 from .lists import ListsAPI
 from .notifications import NotificationsAPI
@@ -24,6 +25,7 @@ class MastodonAPI:
         self.accounts = AccountsAPI(self)
         self.bookmarks = BookmarksAPI(self)
         self.conversations = ConversationsAPI(self)
+        self.favourites = FavouritesAPI(self)
         self.instance = InstanceAPI(self)
         self.lists = ListsAPI(self)
         self.notifications = NotificationsAPI(self)
