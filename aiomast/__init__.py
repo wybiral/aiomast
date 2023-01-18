@@ -4,6 +4,7 @@ from .accounts import AccountsAPI
 from .blocks import BlocksAPI
 from .bookmarks import BookmarksAPI
 from .conversations import ConversationsAPI
+from .domain_blocks import DomainBlocksAPI
 from .favourites import FavouritesAPI
 from .instance import InstanceAPI
 from .lists import ListsAPI
@@ -28,6 +29,7 @@ class MastodonAPI:
         self.blocks = BlocksAPI(self)
         self.bookmarks = BookmarksAPI(self)
         self.conversations = ConversationsAPI(self)
+        self.domain_blocks = DomainBlocksAPI(self)
         self.favourites = FavouritesAPI(self)
         self.instance = InstanceAPI(self)
         self.lists = ListsAPI(self)
