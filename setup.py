@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setuptools.setup(
     name='aiomast',
-    version='0.0.3',
+    version='0.0.4',
     author='davy wybiral',
     author_email="davy.wybiral@gmail.com",
     description='Asynchronous Mastodon library for Python',
