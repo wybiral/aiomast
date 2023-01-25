@@ -7,6 +7,7 @@ from .conversations import ConversationsAPI
 from .domain_blocks import DomainBlocksAPI
 from .favourites import FavouritesAPI
 from .filters import FiltersAPI
+from .follow_requests import FollowRequestsAPI
 from .instance import InstanceAPI
 from .lists import ListsAPI
 from .mutes import MutesAPI
@@ -33,6 +34,7 @@ class MastodonAPI:
         self.domain_blocks = DomainBlocksAPI(self)
         self.favourites = FavouritesAPI(self)
         self.filters = FiltersAPI(self)
+        self.follow_requests = FollowRequestsAPI(self)
         self.instance = InstanceAPI(self)
         self.lists = ListsAPI(self)
         self.mutes = MutesAPI(self)
